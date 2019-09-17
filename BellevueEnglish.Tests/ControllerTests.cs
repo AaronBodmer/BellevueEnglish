@@ -12,7 +12,7 @@ using BellevueEnglish.Controllers;
 
 namespace BellevueEnglish.Tests
 {
-    public class UnitTest1
+    public class ControllerTests
     {
 
         [Fact]
