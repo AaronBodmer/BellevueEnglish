@@ -1,0 +1,168 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+html {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 93.75%;
+    overflow-y: scroll;
+    border: 0
+}
+
+body {
+    line-height: 1.66666667em;
+    text-rendering: optimizeLegibility;
+    color: #444;
+    background-color: white;
+    font-size: 100%
+}
+
+#main {
+    box-shadow: 0 5px 10px #888888;
+    margin-top: 0;
+    background-color: white
+}
+
+div.navbar-header a#logo img.navbar-brand{
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  padding-top: 5px;
+  padding-bottom:5px;
+}
+
+nav.navbar {
+    background: #003D79;
+    height:50px;
+} 
+
+div.jumbotron div 
+{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    width: 80%;
+    left: 10%;
+    bottom: 30px;
+    position: absolute;
+}
+
+/* Tables   */
+.table {
+    display: block !important;
+}
+
+table.table tbody tr.title {
+    font-weight: bold; 
+}
+
+.table tbody tr.description {
+    padding-bottom: 70px;
+}
+
+.table > tbody > tr.no-border > td,
+.table > tbody > tr.no-border > th {
+    border-top: none;
+}
+
+td {
+    text-align:left;
+}
+
+/*    Footer Styles */
+
+#legalbar {
+    clear: left;
+    margin: 0 auto;
+    padding: 1em 0 1em 0;
+    text-align: center
+}
+
+#bigfoot + .container #legalbar {
+    padding: 0.66666667em 0 1em 0
+}
+
+#legalbar li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    list-style-type: none
+}
+
+#legalbar li a {
+    padding: 0 0.9em 0 1em;
+    color: #666;
+    border-left: 1px solid #DDDDDD;
+    font-size: .8em;
+    white-space: nowrap
+}
+
+#legalbar li a:hover, #legalbar li #college-navbar a:focus, #college-navbar #legalbar li a:focus, #legalbar li a:focus {
+    color: #003D79
+}
+
+#legalbar li.first a {
+    border-left: none
+}
+
+#legalbar li.last {
+    float: none;
+    clear: left;
+    display: block;
+    padding: 0
+}
+
+#legalbar li.last a {
+    padding-left: 0;
+    border-left: none
+}
+
+#legalbar span {
+    padding-left: 21px
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}

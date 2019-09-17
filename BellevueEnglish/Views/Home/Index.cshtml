@@ -1,0 +1,57 @@
+﻿@model BellevueEnglish.Models.CourseResults
+@{
+
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+    @{ if (Model.RequestHadErrors)
+        {
+
+            <div class="alert-danger">
+                An error occured while trying to process this request.  Please wait a few minutes and try again.
+                If the problem is not resolved at that time, please contact our <a href="https://bellevuecollege.teamdynamix.com/TDClient/Home/">Technology Service Desk</a> for assistance.
+            </div>
+        }
+        else
+        {
+            <div style="overflow-x:auto;">
+                <table class="table" summary="List of English courses">
+                    <thead>
+                        <tr>
+                            <th colspan="2"><h3>English Classes</h3></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            if (Model.courses.Count() == 0)
+                            {
+                                <tr><td colspan="2">No courses found.</td></tr>
+                            }
+                            else
+                            {
+                                foreach (Course course in Model.courses)
+                                {
+                                    <tr class="title">
+                                        <td>@course.Title</td>
+                                        <td>@course.Credits Credits</td>
+                                    </tr>
+                                    <tr class="description no-border">
+                                        <td colspan="2">
+                                            @course.Description
+                                        </td>
+                                    </tr>
+
+                                    <tr class="no-border"><td colspan="2"></td></tr>
+                                }
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }  // end if-else block
+           
+    /// end code block
+    }
+</div>

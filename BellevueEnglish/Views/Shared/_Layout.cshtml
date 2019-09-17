@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BellevueEnglish</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu">
+    </environment>
+
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="https://www.bellevuecollege.edu/" title="Bellevue College Homepage" id="logo">
+                        <img src="https://www.bellevuecollege.edu/g/3/i/bellevuecollege-b.png"
+                             alt="Bellevue College (with link to home page)"
+                             class="navbar-brand img-responsive">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="span4">
+                    <img style="float:left" src="https://36d5l8225ig13rrnnc3w4af9-wpengine.netdna-ssl.com/wp-content/uploads/sites/13/2013/06/Literature_2.png" class="img-rounded"/>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <h1>Welcome to the English Department!</h1>
+                        <p>We teach you how to read words and things!</p>
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row"><div class="col-md-12 col-sm-12 col-xs-12"></div>&nbsp;</div>
+
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="well">
+                    <p>
+                        Sixty faculty members with Master’s or Doctorate degrees in English or closely related fields teach in our department. We offer approximately 20 sections of developmental writing and reading courses, 45 of transfer level writing, and 10 of literature each quarter. We also offer online and hybrid courses and participate in interdisciplinary and linked courses each quarter.
+                    </p>
+                    <p>
+                        PURPOSE STATEMENT:  By offering high quality courses in literature, composition, and creative writing, the English Department seeks to foster creative and critical abilities, promote multiculturalism and tolerance, cultivate an appreciation of the English language, and empower students to achieve their academic and career goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container" role="contentinfo">
+            <ul id="legalbar">
+                <li id="legal-footer-accessibility" class="first"><a href="https://www.bellevuecollege.edu/accessibility/">Accessibility</a></li>
+                <li id="legal-footer-alerts"><a href="https://www.bellevuecollege.edu/alerts/">Emergency alerts</a></li>
+                <li id="legal-footer-privacy"><a href="https://www.bellevuecollege.edu/website/privacy/">Privacy notice</a></li>
+                <li id="legal-footer-disclosure"><a href="https://www.bellevuecollege.edu/legal/publicdisclosure/">Public disclosure</a></li>
+                <li id="legal-footer-website"><a href="https://www.bellevuecollege.edu/website/">Website info</a></li>
+                <li id="legal-footer-equal"><a href="https://www.bellevuecollege.edu/equal/">We are an equal opportunity institution</a></li>
+            </ul><!-- legalbar -->
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA=">
+        </script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
+        </script>
+
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
